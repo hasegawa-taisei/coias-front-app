@@ -7,7 +7,7 @@
 
 import React, { useState, useMemo, useRef } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './component/Header';
+import { Header } from './component/Header';
 import ExplorePrepare from './page/ExplorePrepare';
 import COIAS from './page/COIAS';
 import ManualMeasurement from './page/ManualMeasurement';
@@ -66,7 +66,7 @@ function App() {
   const [starPos, setStarPos] = useState({});
   const starValue = useMemo(() => ({ starPos, setStarPos }), [starPos]);
   return (
-    <BrowserRouter style={{ position: 'relative' }}>
+    <BrowserRouter>
       <Header />
       <main
         style={{

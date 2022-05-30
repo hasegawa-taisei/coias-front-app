@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Row, Col } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
-function Header() {
+export const Header = () => {
   return (
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand className="px-3">
@@ -73,6 +73,4 @@ function Header() {
       </Navbar.Collapse>
     </Navbar>
   );
-}
-
-export default Header;
+};
